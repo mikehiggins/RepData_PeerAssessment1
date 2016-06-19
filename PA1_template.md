@@ -1,20 +1,17 @@
----
-title: "Reproducible Research: Peer Assessment 1"
-output: 
-  html_document:
-    keep_md: true
----
+# Reproducible Research: Peer Assessment 1
 
 
 ## Loading and preprocessing the data
 Source file is CSV format in a zipped archive. First will unzip and then read the csv file into a dataframe.
-```{r}
+
+```r
 setwd("~/datascience/represearch/repdataProject")
 dataFile <- "activity.zip"
 dataFile <- unzip(dataFile)
 ```
 
-```{r}
+
+```r
 df <- read.csv(dataFile)
 ```
 
